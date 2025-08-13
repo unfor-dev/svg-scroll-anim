@@ -121,6 +121,7 @@ nav a:hover {
   font-size: 1rem;
   color: white;
   text-decoration: none;
+  z-index: 20;
 }
 
 .mobile-nav a:hover {
@@ -185,6 +186,26 @@ footer {
 .footer-contact a:hover {
   color: var(--tan);
 }
+#musicButton {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    z-index: 10;
+    padding: 6px 11px;
+    border: 1px solid rgb(203, 89, 14);
+    background: var(--papaya-whip);
+    color: rgb(203, 89, 14);
+    font-size: 0.9rem;
+    border-radius: 7px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Inter", sans-serif; 
+}
+
+#musicButton:hover {
+    background: #ffcfab;
+}
 
 /* === Responsive Header Behavior === */
 @media (max-width: 768px) {
@@ -198,6 +219,16 @@ footer {
 
   .mobile-nav.show {
     display: flex;
+  }
+  #musicButton {
+    top: 22px;
+    right: 54px;
+  }
+  .logo{
+    font-size: 2rem !important;
+  }
+  .header-inner{
+    padding: 1.2rem 1rem;
   }
 }
 
@@ -297,28 +328,6 @@ footer {
     font-size: 15vw;
   }
 }
-
-#musicButton {
-    position: absolute;
-    top: 100px;
-    right: 20px;
-    z-index: 10;
-    padding: 6px 11px;
-    border: 1px solid rgb(203, 89, 14);
-    background: var(--papaya-whip);
-    color: rgb(203, 89, 14);
-    font-size: 0.9rem;
-    border-radius: 7px;
-    font-weight: bolder;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-family: "Inter", sans-serif; 
-}
-
-#musicButton:hover {
-    background: #ffcfab;
-}
-
 /* === Intro Section (below hero) === */
 .section-intro {
   background-color: var(--papaya-whip);
