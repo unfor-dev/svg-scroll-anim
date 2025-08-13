@@ -17,6 +17,176 @@
 
 <body id="smooth-wrapper">
 
+  <!-- ================== HEADER ================== -->
+  <header style="--border-width:0;">
+    <div class="header-inner">
+      <!-- Logo -->
+      <div class="logo">Jack Daniel's</div>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#">Home</a>
+        <a href="#">Our Whiskey</a>
+        <a href="#">History</a>
+        <a href="#">Visit Us</a>
+      </nav>
+      <button id="musicButton">Sound</button>
+      <audio id="backgroundMusic" src="/public/music.m4a" loop></audio>
+
+      <!-- Hamburger Icon for Mobile -->
+      <div class="hamburger" onclick="toggleMobileNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" id="mobileMenu">
+      <a href="#">Home</a>
+      <a href="#">Our Whiskey</a>
+      <a href="#">History</a>
+      <a href="#">Visit Us</a>
+    </div>
+  </header>
+
+  <!-- ================== MAIN CONTENT ================== -->
+  <main id="smooth-content">
+
+    <!-- Hero Bottle Overlay Wrapper -->
+    <div class="hero-bottle-wrapper">
+      <img src="./whiskey.webp" alt="Jack Daniel's Bottle" class="hero-bottle" />
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero vintage-hero">
+      <div class="hero-content">
+        <!-- Decorative Stamp -->
+        <img src="./stamp.png" alt="Old No. 7 Stamp" class="hero-stamp">
+
+        <!-- Main Heading -->
+        <h1>
+          <span class="line">Old No.7</span>
+          <span class="line highlight">01 777 ZZZ</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section-intro">
+      <div class="intro-grid">
+
+        <!-- Left Side -->
+        <div class="intro-left">
+          <p class="small-title">Our Selection</p>
+          <h2 class="main-heading">The Signature Line</h2>
+          <p class="description">
+            Crafted with care since 1866, our Tennessee whiskey follows Mr. Jack's original recipe and process.
+          </p>
+          <a href="#" class="cta-box">Explore All</a>
+        </div>
+
+        <!-- Right Side -->
+        <div class="intro-right">
+          <div class="ingredients-log">
+            <h3 class="ingredients-title">Distilled With</h3>
+
+            <!-- Ingredients -->
+            <div class="ingredient-item">
+              <div class="ingredient-qty">80%</div>
+              <div class="ingredient-text">
+                <strong>Corn</strong>
+                <p>The foundation of our mash bill for sweetness.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">12%</div>
+              <div class="ingredient-text">
+                <strong>Rye</strong>
+                <p>Adds spice and complexity to the flavor.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">8%</div>
+              <div class="ingredient-text">
+                <strong>Malted Barley</strong>
+                <p>Provides enzymes for fermentation.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">100%</div>
+              <div class="ingredient-text">
+                <strong>Cave Spring Water</strong>
+                <p>Iron-free from our own natural spring.</p>
+              </div>
+            </div>
+
+            <div class="ingredient-item">
+              <div class="ingredient-qty">10ft</div>
+              <div class="ingredient-text">
+                <strong>Sugar Maple Charcoal</strong>
+                <p>For the Lincoln County Process filtration.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+      <h2 class="timeline-main-title">Our Timeline</h2>
+
+      <!-- First Entry -->
+      <div class="timeline-entry">
+        <div class="timeline-left">
+          <div class="timeline-date">1866</div>
+          <img src="./batch.webp" alt="Early Distillery Photo" class="timeline-img" />
+        </div>
+        <div class="timeline-right">
+          <h3 class="timeline-title">The First Barrel</h3>
+          <p class="timeline-description">
+            Jasper Newton "Jack" Daniel registered his distillery, making it the first registered distillery in the United States.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Entry -->
+      <div class="timeline-entry">
+        <div class="timeline-left">
+          <div class="timeline-date">1904</div>
+          <img src="./batch-2.webp" alt="Gold Medal Photo" class="timeline-img" />
+        </div>
+        <div class="timeline-right">
+          <h3 class="timeline-title">World's Fair Gold</h3>
+          <p class="timeline-description">
+            Jack Daniel's Tennessee Whiskey won the Gold Medal for the finest whiskey at the 1904 World's Fair in St. Louis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================== FOOTER ================== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo"><strong>Jack Daniel's</strong> <br /><li>All rights reserved by Unfor</li></div>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Terms</a>
+      </div>
+      <div class="footer-contact">
+        <a href="#">Instagram</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
 
   <!-- ================== JAVASCRIPT ================== -->
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
